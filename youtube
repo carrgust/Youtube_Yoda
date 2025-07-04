@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# YouTube CLI Wrapper Script
+# Makes it easy to run YouTube commands from anywhere
+
+# Get the directory where this script is located
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+# Run the TypeScript CLI with ts-node
+npx ts-node "$SCRIPT_DIR/src/cli/youtube-cli.ts" "$@"
